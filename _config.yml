@@ -118,7 +118,7 @@ url-pretty: "klize.github.io/beautiful-jekyll"  # eg. "deanattali.com/beautiful-
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "beautiful-jekyll"
+disqus: "klize"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
