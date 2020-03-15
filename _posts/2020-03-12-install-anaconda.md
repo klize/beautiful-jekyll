@@ -1,3 +1,13 @@
+---
+layout: post
+published: true
+title: Ubuntu 18.04 Anaconda Install
+subtitle: Quick guide to install Anaconda on Ubuntu 18.04
+date: '2020-03-12'
+---
+
+
+
 # Ubuntu 18.04 Anaconda 설치
 
 원래 Virtualenv ( python-venv 아님. ) 에 익숙해져있다가 최근 conda를 접했다. Docker나 Virtualenv 외에도 나름 일관된 가상환경을 제공하는데에 좋아보였다. 윈도우 환경에서 아나콘다를 많이 쓰기도 하고, 환경을 `.yml`로 만들어 다시 재구축하는 부분이 일단 마음에 들었다.
@@ -41,7 +51,7 @@
    conda info --envs
    conda create -n env_name python=3.7
    conda env remove -n env_name
-    ```
+   ```
 
    위 명령으로 간단히 현재 만들어진 가상환경들을 보고 가상환경을 만들고 지울 수 있다.
 
