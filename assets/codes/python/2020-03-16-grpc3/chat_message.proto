@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package chat_proto;
+
+//Empty
+message Empty {
+
+}
+
+//Text
+message Text {
+    string owner = 1;
+    string msg = 2;
+}
+
+//Message
+message ChatMessage {
+    Text text = 1;
+}
+
+//Request
+message ChatRequest {
+    ChatMessage cmsg = 1;
+}
+
+//Response
+message ChatResponse {
+    bool success = 1;
+}
+
+//Service
+service Chat {
+    rpc recv (Empty) returns (stream ChatMessage) {}
+    rpc send (ChatRequest) returns (ChatResponse) {}
+}
